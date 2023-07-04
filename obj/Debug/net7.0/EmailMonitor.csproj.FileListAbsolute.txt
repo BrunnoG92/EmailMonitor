@@ -13,3 +13,9 @@ C:\Projetos\EmailMonitor\obj\Debug\net7.0\refint\EmailMonitor.dll
 C:\Projetos\EmailMonitor\obj\Debug\net7.0\EmailMonitor.pdb
 C:\Projetos\EmailMonitor\obj\Debug\net7.0\EmailMonitor.genruntimeconfig.cache
 C:\Projetos\EmailMonitor\obj\Debug\net7.0\ref\EmailMonitor.dll
+C:\Projetos\EmailMonitor\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Projetos\EmailMonitor\bin\Debug\net7.0\MailKit.dll
+C:\Projetos\EmailMonitor\bin\Debug\net7.0\MimeKit.dll
+C:\Projetos\EmailMonitor\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Projetos\EmailMonitor\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+C:\Projetos\EmailMonitor\obj\Debug\net7.0\EmailMonitor.csproj.CopyComplete

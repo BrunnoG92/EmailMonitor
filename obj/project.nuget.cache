@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "+7HiJhdZIMfoYnzXWT1fXTIgz6JMm2Pu4Vq2SCvdKLJbM5X+ZENc4RJE31By4eJAw5NCqWgGDlwKVCmufZ9iEg==",
+  "dgSpecHash": "SvJkBl30kf219A9vK5933qVYQCgotEFFL2+o6Tqpg5jfsA/aK+iG6hHlQO35HJ2sHSOMRtFcfFokd9RuhfcrCA==",
   "success": true,
   "projectFilePath": "C:\\Projetos\\EmailMonitor\\EmailMonitor.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Bruno\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
+    "C:\\Users\\Bruno\\.nuget\\packages\\mailkit\\4.1.0\\mailkit.4.1.0.nupkg.sha512",
+    "C:\\Users\\Bruno\\.nuget\\packages\\mimekit\\4.1.0\\mimekit.4.1.0.nupkg.sha512",
+    "C:\\Users\\Bruno\\.nuget\\packages\\system.formats.asn1\\7.0.0\\system.formats.asn1.7.0.0.nupkg.sha512",
+    "C:\\Users\\Bruno\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Bruno\\.nuget\\packages\\system.security.cryptography.pkcs\\7.0.2\\system.security.cryptography.pkcs.7.0.2.nupkg.sha512",
+    "C:\\Users\\Bruno\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
