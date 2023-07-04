@@ -1,0 +1,15 @@
+C:\Projetos\EmailMonitor\bin\Debug\net7.0\EmailMonitor.exe
+C:\Projetos\EmailMonitor\bin\Debug\net7.0\EmailMonitor.deps.json
+C:\Projetos\EmailMonitor\bin\Debug\net7.0\EmailMonitor.runtimeconfig.json
+C:\Projetos\EmailMonitor\bin\Debug\net7.0\EmailMonitor.dll
+C:\Projetos\EmailMonitor\bin\Debug\net7.0\EmailMonitor.pdb
+C:\Projetos\EmailMonitor\obj\Debug\net7.0\EmailMonitor.csproj.AssemblyReference.cache
+C:\Projetos\EmailMonitor\obj\Debug\net7.0\EmailMonitor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\EmailMonitor\obj\Debug\net7.0\EmailMonitor.AssemblyInfoInputs.cache
+C:\Projetos\EmailMonitor\obj\Debug\net7.0\EmailMonitor.AssemblyInfo.cs
+C:\Projetos\EmailMonitor\obj\Debug\net7.0\EmailMonitor.csproj.CoreCompileInputs.cache
+C:\Projetos\EmailMonitor\obj\Debug\net7.0\EmailMonitor.dll
+C:\Projetos\EmailMonitor\obj\Debug\net7.0\refint\EmailMonitor.dll
+C:\Projetos\EmailMonitor\obj\Debug\net7.0\EmailMonitor.pdb
+C:\Projetos\EmailMonitor\obj\Debug\net7.0\EmailMonitor.genruntimeconfig.cache
+C:\Projetos\EmailMonitor\obj\Debug\net7.0\ref\EmailMonitor.dll
