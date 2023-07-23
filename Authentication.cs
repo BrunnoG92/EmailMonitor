@@ -1,7 +1,7 @@
 using System;
+using System.IO;
 using MailKit.Net.Pop3;
 using MimeKit;
-
 
 namespace GmailAuthentication
 {
@@ -11,36 +11,67 @@ namespace GmailAuthentication
         {
             try
             {
-                Console.Write("Digite seu email do Gmail: ");
-                string email = Console.ReadLine();
+                string email, password;
 
-                Console.Write("Digite sua senha do Gmail: ");
-                string password = ReadPassword();
+                if (File.Exists("acesso.txt"))
+                {
+                    string[] lines = File.ReadAllLines("acesso.txt");
+                    email = lines[0];
+                    password = lines[1];
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine("Arquivo de credenciais encontrado. Tentando login com os dados locais");
+                    Console.ResetColor();
+
+                }
+                else
+                {
+                    Console.Write("Email: ");
+                    email = Console.ReadLine();
+
+                    Console.Write("Senha: ");
+                    password = ReadPassword();
+                }
 
                 using (var client = new Pop3Client())
                 {
-                    client.Connect("pop.gmail.com", 995, true);
-                    client.Authenticate(email, password);
+                    try
+                    {
+                        client.Connect("pop.gmail.com", 995, true);
+                        client.Authenticate(email, password);
+                    }
+                    catch
+                    {   Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Falha na autenticação. Informe novamente os dados de login:");
+                        Console.ResetColor();
+
+                        Console.Write("Email: ");
+                        email = Console.ReadLine();
+
+                        Console.Write("Senha: ");
+                        password = ReadPassword();
+
+                        client.Connect("pop.gmail.com", 995, true);
+                        client.Authenticate(email, password);
+                    }
 
                     Console.ForegroundColor = ConsoleColor.Green;
                     Console.WriteLine("Conectado com sucesso!");
                     Console.ResetColor();
+
                     EmailSearch emailSearch = new EmailSearch(email, password);
                     emailSearch.SearchUnreadEmailsInLabel();
-                    // Faça algo após a autenticação bem-sucedida
                 }
             }
             catch (Exception ex)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"Ocorreu uma exceção: {ex.Message}");
+                Console.WriteLine($"Erro: {ex.Message}");
                 Console.ResetColor();
             }
 
             Console.ReadLine();
         }
 
-        // Função para ler a senha sem exibi-la no console
         private static string ReadPassword()
         {
             string password = "";

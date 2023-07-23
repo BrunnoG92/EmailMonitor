@@ -76,7 +76,7 @@ namespace GmailAuthentication
                     var searchQuery = SearchQuery.NotSeen;
 
                     var folders = client.GetFolders(client.PersonalNamespaces[0]);
-
+                     Console.ResetColor();
                     Console.WriteLine("Pastas disponíveis:");
                     for (int i = 0; i < folders.Count; i++)
                     {
